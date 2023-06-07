@@ -3,6 +3,7 @@ import { Summary } from "../../components/Summary"
 import { SearchForm } from "./components/SearchForm"
 import { PriceHighlight, TransacionsTable, TransactionsContainer } from "./styles"
 import { useTransaction } from "../../context/useTransaction"
+import { dateFormat, priceFormat } from "../../utils/formatters"
 
 
 
@@ -25,11 +26,12 @@ export const Transactions = () => {
                 <td width={"50%"}>{transaction.description}</td> 
                 <td>
                   <PriceHighlight variant={transaction.type}>
-                  {transaction.price}
+                    {transaction.type === 'outcome' && '- '}
+                  {priceFormat.format(transaction.price)}
                   </PriceHighlight>
                   </td>   
                 <td>{transaction.category}</td>   
-                <td>{transaction.createdAt}</td>   
+                <td>{dateFormat.format(new Date(transaction.createdAt))}</td>   
               </tr>
               )
             })
