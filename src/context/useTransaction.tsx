@@ -33,7 +33,6 @@ export const TransactionProvider = ({children} : TransactionContextProps) => {
     getTransactions()
   }, [])
 
-  console.log(transactions)
   return (
     <TransactionContext.Provider value={{transactions}}>
       {children}

@@ -31,6 +31,14 @@
       "category": "Renda",
       "price": 3000,
       "createdAt": "2022-08-10T15:45:30.505Z"
+    },
+    {
+      "id": 5,
+      "description": "Educação",
+      "type": "outcome",
+      "category": "Renda",
+      "price": 3000,
+      "createdAt": "2022-10-10T15:45:30.505Z"
     }
   ]
 }

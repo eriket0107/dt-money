@@ -8,9 +8,9 @@ export const  App = ( ) => {
 
   return (
     <ThemeProvider theme={defaultTheme}>
-      <TransactionProvider>
       <GlobalStyle />
-      <Transactions/>
+      <TransactionProvider>
+        <Transactions/> 
       </TransactionProvider>
     </ThemeProvider>
   )
