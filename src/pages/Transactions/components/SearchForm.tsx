@@ -1,5 +1,5 @@
 import { MagnifyingGlass } from 'phosphor-react'
-import { SearchFormContainer } from './styles'
+import { Loading, SearchFormContainer } from './styles'
 import { useForm } from 'react-hook-form'
 import * as z from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
@@ -32,7 +32,7 @@ export const SearchForm = () => {
         {...register('query')}
       />
       <button type="submit" disabled={isSubmitting}>
-        <MagnifyingGlass size={20} />
+        {!isSubmitting ? <MagnifyingGlass size={20} /> : <Loading />}
         Buscar
       </button>
     </SearchFormContainer>
