@@ -39,6 +39,22 @@
       "category": "Educação",
       "price": 2000,
       "createdAt": "2022-10-10T15:45:30.505Z"
+    },
+    {
+      "category": "Alimentação",
+      "description": "Yakisoba",
+      "price": 43,
+      "type": "outcome",
+      "createdAt": "2023-06-13T12:10:52.242Z",
+      "id": 6
+    },
+    {
+      "category": "Lazer",
+      "description": "PS5",
+      "price": 5000,
+      "type": "outcome",
+      "createdAt": "2023-06-13T12:49:40.418Z",
+      "id": 7
     }
   ]
 }

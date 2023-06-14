@@ -16,6 +16,25 @@ body {
   background-color: ${({ theme }) => theme['gray-800']};
   color: ${({ theme }) => theme['gray-100']};
   -webkit-font-smoothing: antiliased;
+
+  *::-webkit-scrollbar {
+    width: 0.5rem; 
+  }
+
+  *::-webkit-scrollbar-track {
+    background: ${({ theme }) => theme['gray-900']}; 
+    border-radius: 1rem;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background: ${({ theme }) => theme['gray-700']}; 
+    border-radius: 1rem;
+
+  }
+
+  *::-webkit-scrollbar-thumb:hover {
+    background: ${({ theme }) => theme['gray-600']}
+  }
 }
 
 body, input, text-area, button {

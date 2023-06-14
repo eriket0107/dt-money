@@ -7,13 +7,17 @@ export const TransactionsContainer = styled.main`
   padding: 0 1.5rem;
 `
 
+export const TransacionsTableContainer = styled.div`
+  max-height: 30rem;
+  overflow-y: auto;
+  margin-top: 1.5rem;
+  padding-right: 0.5rem;
+`
+
 export const TransacionsTable = styled.table`
-  width: 100%;
   border-collapse: separate;
   border-spacing: 0 0.5rem;
-  /* margin-top: 1.5rem; */
-  overflow-y: auto;
-  max-height: 45.75rem;
+  width: 100%;
   td {
     padding: 1.25rem 2rem;
     background-color: ${(props) => props.theme['gray-700']};
